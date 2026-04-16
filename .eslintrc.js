@@ -11,5 +11,6 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': ['error'],
+    'no-underscore-dangle': ['error', { allow: ['_id'] }],
   },
 };

@@ -1,9 +1,14 @@
 module.exports = (db) =>
   db.model(
     'Users',
-    db.Schema({
-      email: String,
-      password: String,
-      fullName: String,
-    })
+    db.Schema(
+      {
+        email: String,
+        password: String,
+        fullName: String,
+      },
+      {
+        timestamps: true,
+      }
+    )
   );
